@@ -26,8 +26,7 @@ planet_event = {
 		OR = {
 			habitable_planet = yes	
 			is_planet_class = pc_nuked	
-			is_planet_class = pc_ringworld_habitable
-			is_planet_class = pc_habitat	
+			is_artificial = yes	
 		}
 		NOR = {
 			is_planet_class = pc_dark_fractured
@@ -61,7 +60,7 @@ planet_event = {
 		every_playable_country = {
 			limit = {
 				NOR = {
-					is_same_value = root.owner
+					is_same_empire = root.owner
 					is_same_value = from
 				}
 			}
@@ -70,10 +69,7 @@ planet_event = {
 		if = {
 			limit = {
 				has_orbital_bombardment_stance = punishment			
-				NOR = {
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat
-				}
+				is_artificial = no
 			}
 			change_pc = pc_dark_fractured_unstable
 			reset_planet = yes
@@ -97,10 +93,7 @@ planet_event = {
 		if = {
 			limit = {
 				has_orbital_bombardment_stance = exterminatus		
-				NOR = {
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat
-				}
+				is_artificial = no
 			}
 			change_pc = pc_dark_fractured_ae_unstable
 			reset_planet = yes
@@ -147,8 +140,7 @@ planet_event = {
 		OR = {
 			habitable_planet = yes		
 			is_planet_class = pc_nuked
-			is_planet_class = pc_ringworld_habitable
-			is_planet_class = pc_habitat	
+			is_artificial = yes	
 		}
 		NOR = {
 			is_planet_class = pc_dark_fractured_ae
@@ -221,7 +213,7 @@ planet_event = {
 				every_playable_country = {
 					limit = {
 						NOR = {
-							is_same_value = root.owner
+							is_same_empire = root.owner
 							is_same_value = from
 						}
 					}
@@ -235,10 +227,7 @@ planet_event = {
 				clear_planet_modifiers = yes
 				if = {
 					limit = {
-						NOR = {
-							is_planet_class = pc_ringworld_habitable
-							is_planet_class = pc_habitat
-						}
+						is_artificial = no
 					}
 					change_pc = pc_dark_fractured_unstable
 					reset_planet = yes
@@ -279,8 +268,7 @@ planet_event = {
 		OR = {
 			habitable_planet = yes		
 			is_planet_class = pc_nuked
-			is_planet_class = pc_ringworld_habitable
-			is_planet_class = pc_habitat	
+			is_artificial = yes	
 		}
 		NOT = {
 			has_planet_flag = bombardment_cooldown
@@ -363,7 +351,7 @@ planet_event = {
 				every_playable_country = {
 					limit = {
 						NOR = {
-							is_same_value = root.owner
+							is_same_empire = root.owner
 							is_same_value = from
 						}
 					}
@@ -377,10 +365,7 @@ planet_event = {
 				clear_planet_modifiers = yes
 				if = {
 					limit = {
-						NOR = {
-							is_planet_class = pc_ringworld_habitable
-							is_planet_class = pc_habitat
-						}
+						is_artificial = no
 					}
 					change_pc = pc_dark_fractured_ae_unstable
 					reset_planet = yes
@@ -613,8 +598,7 @@ planet_event = {
 				OR = {
 					is_country_type = default
 					is_country_type = primitive
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
+					is_fallen_empire = yes
 					is_country_type = ascended_empire
 					is_country_type = lost_empire
 					is_country_type = eternal_empire
@@ -626,14 +610,12 @@ planet_event = {
 		OR = {
 			habitable_planet = yes		
 			is_planet_class = pc_nuked
-			is_planet_class = pc_ringworld_habitable
-			is_planet_class = pc_habitat	
+			is_artificial = yes	
 		}
 		OWNER = {
 			or = {
 				is_country_type = default
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				is_country_type = awakened_marauders
 			}
 		}
@@ -742,8 +724,7 @@ planet_event = {
 		OWNER = {
 			or = {
 				is_country_type = default
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				is_country_type = awakened_marauders
 				is_country_type = ascended_empire
 				is_country_type = lost_empire

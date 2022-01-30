@@ -26,13 +26,10 @@ event = {
                         is_country_type = ascended_empire
                         is_country_type = eternal_empire
                     }
-                    NOR = {  
-                        is_country_type = fallen_empire
-                        is_country_type = awakened_fallen_empire
+                    NOR = {
+                        is_fallen_empire = yes
                         has_country_flag = about_to_be_negotiated
-                        has_valid_civic = civic_fanatic_purifiers
-                        has_valid_civic = civic_machine_terminator
-                        has_valid_civic = civic_hive_devouring_swarm
+                        is_homicidal = yes
                     }                      
                 }
             }  
@@ -49,26 +46,20 @@ event = {
                                     is_country_type = ascended_empire
                                     is_country_type = eternal_empire
                                 }
-                                NOR = {  
-                                    is_country_type = fallen_empire
-                                    is_country_type = awakened_fallen_empire
+                                NOR = {
+                                    is_fallen_empire = yes
                                     has_country_flag = about_to_be_negotiated
-                                    has_valid_civic = civic_fanatic_purifiers
-                                    has_valid_civic = civic_machine_terminator
-                                    has_valid_civic = civic_hive_devouring_swarm
+                                    is_homicidal = yes
                                 }                               
                             }
                          }
                          random_country = {
                             limit = {
                                 has_technology = tech_dark_matter_power_core
-                                NOR = {  
-                                    is_country_type = fallen_empire
-                                    is_country_type = awakened_fallen_empire
+                                NOR = {
+                                    is_fallen_empire = yes
                                     has_country_flag = about_to_be_negotiated
-                                    has_valid_civic = civic_fanatic_purifiers
-                                    has_valid_civic = civic_machine_terminator
-                                    has_valid_civic = civic_hive_devouring_swarm
+                                    is_homicidal = yes
                                 }                
                             }
                             country_event = { id = acot_diplo.2  }
@@ -97,13 +88,10 @@ country_event = {
             is_country_type = ascended_empire
             is_country_type = eternal_empire
         }
-        NOR = {  
-            is_country_type = fallen_empire
-            is_country_type = awakened_fallen_empire
+        NOR = {
+            is_fallen_empire = yes
             has_country_flag = about_to_be_negotiated
-            has_valid_civic = civic_fanatic_purifiers
-            has_valid_civic = civic_machine_terminator
-            has_valid_civic = civic_hive_devouring_swarm
+            is_homicidal = yes
         }  
     }
 
@@ -114,7 +102,7 @@ country_event = {
     immediate = {
         if = {
             limit = { 
-                any_country = {
+                any_playable_country = {
                     is_ai = yes
                     is_country_type = default
                     has_established_contact = root
@@ -671,13 +659,11 @@ country_event = {
     trigger = {
         is_country_type = default
         has_technology = tech_dark_matter_power_core
-        NOR = {  
-            has_ascension_perk = ap_enigmatic_engineering          
+        NOR = {
+	has_ascension_perk = ap_enigmatic_engineering          
             has_country_flag = will_not_have_ambushed_ship
-        }     
-       NOT = {
-          has_global_flag = acot_diplo_forbidden
-        }
+	has_global_flag = acot_diplo_forbidden
+}
         any_owned_ship = {
             is_ship_class = shipclass_science_ship
             leader = {
@@ -695,7 +681,7 @@ country_event = {
                 }
             }
         }     
-        any_country = {
+        any_playable_country = {
             is_ai = yes
             is_country_type = default
             has_established_contact = root
@@ -1424,11 +1410,9 @@ country_event = {
 		name = acot_diplo.801.j
         response_text = acot_diplo.801.j.response
         trigger = {
-			NOT = {
+			NOR = {
 				has_country_flag = ask_curator_stellarite_origin
-            }
-            NOR = {
-                has_event_chain = acot_stellarite_chain
+				has_event_chain = acot_stellarite_chain
                 has_technology = tech_stellarite_reactor
 			}
         }

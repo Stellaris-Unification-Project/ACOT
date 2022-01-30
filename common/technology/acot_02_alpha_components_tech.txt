@@ -52,9 +52,9 @@ tech_laser_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -111,9 +111,9 @@ tech_energy_torpedo_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -169,9 +169,9 @@ tech_disruptor_ae = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -227,9 +227,9 @@ tech_plasma_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -285,9 +285,9 @@ tech_point_defense_ae = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -325,9 +325,9 @@ tech_mass_driver_ae = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -379,9 +379,9 @@ tech_autocannons_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -432,9 +432,9 @@ tech_kinetic_artillery_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -486,9 +486,9 @@ tech_flak_batteries_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -539,9 +539,9 @@ tech_missile_ae = {
 	is_rare	= yes
 
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -592,9 +592,9 @@ tech_torpedo_ae = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -645,9 +645,9 @@ tech_swarmer_missile_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -697,9 +697,9 @@ tech_barrage_missile_ae = {
 	prerequisites = { "tech_barrage_missile_dm" "tech_missile_ae" }
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -772,9 +772,9 @@ tech_xl_missile_ae = {
 	prerequisites = { "tech_barrage_missile_ae" "tech_xl_missile_dm" }
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -847,9 +847,9 @@ tech_missile_nuke_ae = {
 	prerequisites = { "tech_xl_missile_ae" "tech_missile_nuke_dm" }
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -925,9 +925,9 @@ tech_strike_craft_bomber_ae = {
 	is_reverse_engineerable = no
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -957,9 +957,9 @@ tech_strike_craft_gunship_ae = {
 	prerequisites = { "tech_strike_craft_gunship_dm" "tech_dark_matter_power_core_ae" }
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1005,9 +1005,9 @@ tech_energy_lance_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1058,9 +1058,9 @@ tech_arc_emitter_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1111,9 +1111,9 @@ tech_mass_accelerator_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1165,9 +1165,9 @@ tech_perdition_beam_ae = {
 	is_reverse_engineerable = no
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1215,9 +1215,9 @@ tech_titan_emitter_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1264,9 +1264,9 @@ tech_titan_accelerator_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1317,9 +1317,9 @@ tech_resized_mass_accelerator_ae = {
 	weight = @tier5weight3
 	
 	potential = {
-		NOT = { has_global_flag = acot_weapons_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_weapons_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1601,9 +1601,9 @@ tech_enigmatic_drive = {
 	}	
 
 	potential = {
-		NOT = { has_global_flag = acot_shipcom_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_shipcom_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1658,9 +1658,9 @@ tech_sensor_fe = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = acot_shipcom_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_shipcom_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1715,9 +1715,9 @@ tech_fe_thruster_2 = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = acot_shipcom_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_shipcom_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1751,9 +1751,9 @@ tech_dark_matter_deflector_ae = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = acot_utilitys_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_utilitys_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1776,9 +1776,9 @@ tech_dark_matter_power_core_ae = {
 	is_dangerous = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_shipcom_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_shipcom_forbidden
+			is_country_type = fallen_empire
 		}
 	}
 
@@ -1879,9 +1879,9 @@ tech_armor_ae = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_utilitys_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_utilitys_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1909,9 +1909,9 @@ tech_darkmatter_afterburners = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = acot_shipcom_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_shipcom_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1938,9 +1938,9 @@ tech_darkmatter_star_charter = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = acot_shipcom_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_shipcom_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -1986,9 +1986,9 @@ tech_darkmatter_shield_supercharger = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = acot_utilitys_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_utilitys_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -2010,9 +2010,9 @@ tech_darkmatter_reactor_booster = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_shipcom_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_shipcom_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -2039,9 +2039,9 @@ tech_darkmatter_reactive_drone = {
 	is_rare = yes
 	
 	potential = {
-		NOT = { has_global_flag = acot_utilitys_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_utilitys_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -2065,9 +2065,9 @@ tech_darkmatter_hyper_jump_drive = {
 	prerequisites = { "tech_enigmatic_drive" }
 
 	potential = {
-		NOT = { has_global_flag = acot_shipcom_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_shipcom_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}
@@ -2121,9 +2121,9 @@ tech_darkmatter_aura_energy_drainer = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = acot_shipcom_forbidden }
-		NOT = {
-			is_country_type = fallen_empire 			
+		NOR = {
+			has_global_flag = acot_shipcom_forbidden
+			is_country_type = fallen_empire
 		}
 		has_technology = tech_dark_matter_power_core_ae
 	}

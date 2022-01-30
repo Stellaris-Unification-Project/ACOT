@@ -883,8 +883,8 @@ decision_acot_supercharged_reactor = {
 			is_planet_class = pc_dark_fractured
 			is_planet_class = pc_dark_fractured_ae
 			is_planet_class = pc_acot_enigmopolis
+			has_modifier = acot_modifier_supercharged_reactor
 		}
-		NOT = { has_modifier = acot_modifier_supercharged_reactor }
 	}
 	
 	effect = {
@@ -950,8 +950,8 @@ decision_acot_supercharged_pylon = {
 			is_planet_class = pc_dark_fractured
 			is_planet_class = pc_dark_fractured_ae
 			is_planet_class = pc_acot_enigmopolis
+			has_modifier = acot_modifier_supercharged_pylon
 		}
-		NOT = { has_modifier = acot_modifier_supercharged_pylon }
 	}
 	
 	effect = {
@@ -1002,11 +1002,7 @@ decision_acot_kill_void_mutant = {
 	}
 	
 	allow = {
-		any_planet_army = {
-			owner = {
-				is_same_value = root.owner
-			}
-		}		
+		any_planet_army = { is_owned_by = root.owner }		
 	}
 
 	potential = {
@@ -1072,11 +1068,7 @@ decision_acot_kill_void_lifeform = {
 	}
 	
 	allow = {
-		any_planet_army = {
-			owner = {
-				is_same_value = this
-			}
-		}		
+		any_planet_army = { is_owned_by = this }		
 	}
 
 	potential = {
@@ -1142,11 +1134,7 @@ decision_acot_kill_void_machine = {
 	}
 	
 	allow = {
-		any_planet_army = {
-			owner = {
-				is_same_value = root.owner
-			}
-		}		
+		any_planet_army = { is_owned_by = root.owner }		
 	}
 
 	potential = {
@@ -1212,11 +1200,7 @@ decision_acot_kill_void_crystal = {
 	}
 	
 	allow = {
-		any_planet_army = {
-			owner = {
-				is_same_value = root.owner
-			}
-		}		
+		any_planet_army = { is_owned_by = root.owner }		
 	}
 
 	potential = {
@@ -1282,11 +1266,7 @@ decision_acot_kill_void_flora = {
 	}
 	
 	allow = {
-		any_planet_army = {
-			owner = {
-				is_same_value = root.owner
-			}
-		}		
+		any_planet_army = { is_owned_by = root.owner }		
 	}
 
 	potential = {
@@ -1380,8 +1360,6 @@ decision_transform_into_super_awesome = {
 			has_modifier = acot_modifier_fractured_mutants
 			has_modifier = acot_modifier_fractured_plants
 			has_modifier = acot_modifier_fractured_sentient_crystal
-		}		
-		NOR = {
 			has_deposit = d_acot_void_chasm
 			has_deposit = d_acot_void_terrain
 			has_deposit = d_acot_void_rift
@@ -1430,7 +1408,7 @@ decision_fractured_self_detonation = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { is_same_value = root.owner }
+				is_owned_by = root.owner
 			}
 			influence = 500
 			unity = 50000
@@ -1438,7 +1416,7 @@ decision_fractured_self_detonation = {
 		cost = {
 			trigger = {
 				NOT = {
-					owner = { is_same_value = root.owner }
+					is_owned_by = root.owner
 				}
 			}
 			influence = 250
@@ -1447,7 +1425,7 @@ decision_fractured_self_detonation = {
 	sound = event_ai_started_01
 	potential = {
 		exists = space_owner
-		space_owner = { is_same_value = from }
+		is_owned_by = from
 		from = {
 			has_technology = tech_bombardment_ae_final
 		}
@@ -1525,7 +1503,7 @@ decision_fractured_stablize = {
 
 	potential = {
 		exists = space_owner
-		space_owner = { is_same_value = from }
+		is_owned_by = from
 		OR = {
 			is_planet_class = pc_dark_fractured_unstable
 			is_planet_class = pc_dark_fractured_ae_unstable
@@ -1575,7 +1553,7 @@ decision_stellarite_reactor_detonation = {
 
 	potential = {
 		exists = owner
-		owner = { is_same_value = root.owner }
+		is_owned_by = root.owner
 		from = {
 			has_technology = tech_bombardment_se
 		}
@@ -1783,11 +1761,7 @@ decision_acot_infiltrate_phanon_grid = {
 	}
 	
 	allow = {
-		any_planet_army = {
-			owner = {
-				is_same_value = root.owner
-			}
-		}	
+		any_planet_army = { is_owned_by = root.owner }	
 		NOT = {
 			has_modifier = acot_modifier_vault_delay
 		}

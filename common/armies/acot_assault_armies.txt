@@ -417,10 +417,10 @@ fe_omnidroid_army = {
 		NOT = { has_global_flag = acot_army_forbidden }
 		from = { has_trait = "trait_mechanical" }
 		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
-			NOT = { 
+			NOR = {
+				has_authority = auth_machine_intelligence
 				has_technology = tech_omnidroid_ae
-			 }
+			}
 		}
 	}
 

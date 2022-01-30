@@ -234,25 +234,21 @@ tech_omnidroid = {
 	## unlock Omnidroid
 	
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-		NOT = { has_global_flag = acot_army_forbidden }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			has_global_flag = acot_army_forbidden
+		}
 	}	
 	
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
 			factor = 0.5
-			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 4
@@ -285,10 +281,7 @@ tech_omnidroid = {
 		weight = 2
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -313,25 +306,21 @@ tech_omnidroid_ae = {
 	## unlock Omnidroid
 	
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-		NOT = { has_global_flag = acot_army_forbidden }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			has_global_flag = acot_army_forbidden
+		}
 	}	
 	
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
 			factor = 0.5
-			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 4
@@ -364,10 +353,7 @@ tech_omnidroid_ae = {
 		weight = 2
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -392,25 +378,21 @@ tech_omnidroid_se = {
 	## unlock Omnidroid
 	
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-		NOT = { has_global_flag = acot_army_forbidden }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			has_global_flag = acot_army_forbidden
+		}
 	}	
 	
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
 			factor = 0.5
-			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 4
@@ -443,10 +425,7 @@ tech_omnidroid_se = {
 		weight = 2
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -1910,8 +1889,10 @@ tech_elite_genetrooper = {
 	# unlocks FE gene-warrior armies
 	
 	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
-		NOT = { has_global_flag = acot_army_forbidden }
+		NOR = {
+			has_authority = auth_machine_intelligence
+			has_global_flag = acot_army_forbidden
+		}
 	}	
 	
 	weight_modifier = {
@@ -2002,8 +1983,10 @@ tech_dark_templar = {
 	is_reverse_engineerable = no
 	
 	potential = {
-		NOT = { has_ethic = ethic_gestalt_consciousness }
-		NOT = { has_global_flag = acot_army_forbidden }
+		NOR = {
+			has_ethic = ethic_gestalt_consciousness
+			has_global_flag = acot_army_forbidden
+		}
 	}
 	
 	weight_modifier = {
@@ -2058,10 +2041,7 @@ tech_dark_templar = {
 		factor = 5 #very rare tech
 		modifier = {
 			factor = 1.5
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -2135,10 +2115,7 @@ tech_dark_psion = {
 		modifier = {
 			factor = 0.75
 			AND = {
-				OR = {
-					has_ethic = "ethic_materialist"
-					has_ethic = "ethic_fanatic_materialist"
-				}
+				is_materialist = yes
 				NOT = {
 					research_leader = {
 						area = society
@@ -2153,10 +2130,7 @@ tech_dark_psion = {
 		factor = 5 #very rare tech
 		modifier = {
 			factor = 1.5
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -2195,17 +2169,11 @@ tech_synthtrooper = {
 		}	
 		modifier = {
 			factor = 0.5
-			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 4
@@ -2238,10 +2206,7 @@ tech_synthtrooper = {
 		weight = 2
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -2277,17 +2242,11 @@ tech_omnisynth = {
 		}	
 		modifier = {
 			factor = 0.5
-			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 4
@@ -2320,10 +2279,7 @@ tech_omnisynth = {
 		weight = 2
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25

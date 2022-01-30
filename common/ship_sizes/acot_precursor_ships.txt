@@ -97,9 +97,8 @@ precursor_escort = {
 	prerequisites = { "tech_precursor_escort" }
 	
 	possible_country = {
-		NOR = {
-			is_country_type = fallen_empire		
-			is_country_type = awakened_fallen_empire
+		NOR = {		
+			is_fallen_empire = yes
 			is_country_type = eternal_empire
 		}
 	}
@@ -153,9 +152,8 @@ precursor_battlecruiser = {
 	prerequisites = { "tech_precursor_bc" }
 	
 	possible_country = {
-		NOR = {
-			is_country_type = fallen_empire		
-			is_country_type = awakened_fallen_empire
+		NOR = {		
+			is_fallen_empire = yes
 			is_country_type = eternal_empire
 		}
 	}
@@ -203,7 +201,7 @@ precursor_titan = {
 	section_slots = { "spinal" = { locator = "part1" } "mid" = { locator = "part1" } "core" = { locator = "part1" } "stern" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 6
+	icon = ship_size_military_16
 	
 	is_space_object = yes
 
@@ -250,9 +248,8 @@ precursor_titan = {
 	required_component_set = "ship_aura_components"
 
 	possible_country = {
-		NOR = {
-			is_country_type = fallen_empire		
-			is_country_type = awakened_fallen_empire
+		NOR = {		
+			is_fallen_empire = yes
 			is_country_type = eternal_empire
 		}
 	}
@@ -277,7 +274,7 @@ fe_assault_carrier = {
 	section_slots = { "spinal" = { locator = "part1" } "hanger1" = { locator = "part1" } "hanger2" = { locator = "part1" } "hanger3" = { locator = "part1" } }
 	num_target_locators = 6
 	is_space_station = no
-	icon_frame = 6
+	icon = ship_size_military_16
 	
 	default_behavior = origin_defense_titan
 
@@ -322,9 +319,8 @@ fe_assault_carrier = {
 	required_component_set = "combat_computers"
 
 	possible_country = {
-		NOR = {
-			is_country_type = fallen_empire		
-			is_country_type = awakened_fallen_empire
+		NOR = {		
+			is_fallen_empire = yes
 			is_country_type = eternal_empire
 		}
 	}
@@ -382,9 +378,8 @@ precursor_guardian = {
 	class = shipclass_military_station
 	
 	possible_country = {
-		NOR = {
-			is_country_type = fallen_empire		
-			is_country_type = awakened_fallen_empire
+		NOR = {		
+			is_fallen_empire = yes
 			is_country_type = eternal_empire
 		}
 	}
@@ -456,9 +451,8 @@ sentinel_sphere = {
 	class = shipclass_military_station
 	
 	possible_country = {
-		NOR = {
-			is_country_type = fallen_empire		
-			is_country_type = awakened_fallen_empire
+		NOR = {		
+			is_fallen_empire = yes
 			is_country_type = eternal_empire
 		}
 	}
@@ -750,7 +744,7 @@ precursor_science = {
 	section_slots = { "mid" = { locator = "part1" } "stern" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 8
+	icon = ship_size_science
 	base_buildtime = 250
 
 	combat_disengage_chance = 4.0
@@ -771,9 +765,8 @@ precursor_science = {
 	}
 
 	possible_country = {
-		NOR = {
-			is_country_type = fallen_empire		
-			is_country_type = awakened_fallen_empire
+		NOR = {		
+			is_fallen_empire = yes
 			is_country_type = eternal_empire
 		}
 	}
@@ -819,7 +812,7 @@ precursor_constructor = {
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part1" }  "stern" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 9
+	icon = ship_size_constructor
 	base_buildtime = 250
 
 	combat_disengage_chance = 1.5
@@ -836,9 +829,8 @@ precursor_constructor = {
 
 
 	possible_country = {
-		NOR = {
-			is_country_type = fallen_empire		
-			is_country_type = awakened_fallen_empire
+		NOR = {		
+			is_fallen_empire = yes
 			is_country_type = eternal_empire
 		}
 	}
@@ -884,7 +876,7 @@ precursor_colonizer = {
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part1" }  "stern" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 10
+	icon = ship_size_colonizer
 	base_buildtime = 360
 
 	combat_disengage_chance = 1.5
@@ -901,9 +893,8 @@ precursor_colonizer = {
 
 
 	possible_country = {
-		NOR = {
-			is_country_type = fallen_empire		
-			is_country_type = awakened_fallen_empire
+		NOR = {		
+			is_fallen_empire = yes
 			is_country_type = eternal_empire
 		}
 	}

@@ -30,7 +30,7 @@ acot_dark_matter_obelisk_core = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"
@@ -123,7 +123,7 @@ acot_dark_matter_obelisk_core = {
 			any_neighbor_system = {
 				exists = owner
 				NOT = { 
-					owner = { is_same_value = from } 
+					is_owned_by = from 
 				}
 			}
 		}		
@@ -616,7 +616,7 @@ acot_precursor_citadel_site = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 		}
 		custom_tooltip = {
@@ -644,7 +644,7 @@ acot_precursor_citadel_site = {
 			any_neighbor_system = {
 				exists = owner
 				NOT = { 
-					owner = { is_same_value = from } 
+					is_owned_by = from 
 				}
 			}
 		}
@@ -716,7 +716,7 @@ acot_precursor_sigma_citadel_site = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 		}
 		custom_tooltip = {
@@ -744,7 +744,7 @@ acot_precursor_sigma_citadel_site = {
 			any_neighbor_system = {
 				exists = owner
 				NOT = { 
-					owner = { is_same_value = from } 
+					is_owned_by = from 
 				}
 			}
 		}
@@ -818,7 +818,7 @@ acot_precursor_phanon_citadel_site = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 		}
 		custom_tooltip = {
@@ -846,7 +846,7 @@ acot_precursor_phanon_citadel_site = {
 			any_neighbor_system = {
 				exists = owner
 				NOT = { 
-					owner = { is_same_value = from } 
+					is_owned_by = from 
 				}
 			}
 		}
@@ -1035,7 +1035,7 @@ acot_precursor_colossus_site = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_planets_for_material"
-				hidden:solar_system = { any_system_planet = { NOT = { is_star = yes } } }
+				hidden:solar_system = { any_system_planet = { is_star = no } }
 			}
 			custom_tooltip = {
 				fail_text = "requires_surveyed_planet"
@@ -1050,7 +1050,7 @@ acot_precursor_colossus_site = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			
 		}
@@ -1071,7 +1071,7 @@ acot_precursor_colossus_site = {
 			any_neighbor_system = {
 				exists = owner
 				NOT = { 
-					owner = { is_same_value = from } 
+					is_owned_by = from 
 				}
 			}
 		}

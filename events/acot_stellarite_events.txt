@@ -336,7 +336,7 @@ country_event = {
 			leader_class = scientist
 			has_level >= 8
 		}
-		any_country = {
+		any_playable_country = {
 			is_country_type = default
 			has_technology = "tech_stellarite_reactor"			
 		}
@@ -402,8 +402,8 @@ country_event = {
 	}
 
 	trigger = {
-		NOT = { has_country_flag = stellarite_punisher_delay }
-		NOT = {
+		NOR = {
+			has_country_flag = stellarite_punisher_delay
 			has_global_flag = acot_dangerous_forbidden
 		}
 		has_technology = "tech_stellarite_reactor"	

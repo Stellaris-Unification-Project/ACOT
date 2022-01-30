@@ -77,7 +77,7 @@ can_destroy_planet_with_ACOT_PLANET_KILLER_CRACKER = {
 					NOT = { exists = space_owner }
 					AND = {
 						exists = space_owner
-						space_owner = { is_same_value = from.owner }
+						is_owned_by = from.owner
 					}
 				}
 				OR = {
@@ -97,8 +97,7 @@ can_destroy_planet_with_ACOT_PLANET_KILLER_CRACKER = {
 					is_planet_class = pc_savannah
 					is_planet_class = pc_gaia	
 					is_planet_class = pc_nuked
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat
+					is_artificial = yes
 				}
 			}
 		}
@@ -158,10 +157,7 @@ can_destroy_planet_with_ACOT_PLANET_KILLER_NEUTRON = {
 					is_country_type = primitive
 				}
 				from.owner = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
+					is_xenophobe = yes
 				}
 			}
 			AND = { # at war with primitive space owner
@@ -216,7 +212,7 @@ can_destroy_planet_with_ACOT_PLANET_KILLER_GODRAY = {
 			}
 			AND = {
 				exists = owner
-				owner = { is_same_value = from.owner }
+				is_owned_by = from.owner
 			}
 		}
 	}
@@ -232,14 +228,14 @@ can_destroy_planet_with_ACOT_PLANET_KILLER_GODRAY = {
 			}
 			exists = owner
 			owner = {
-				is_same_value = from.owner
+				is_same_empire = from.owner
 			}
 		}
 		custom_tooltip = {
 			text = not_owned_test_fire
 			exists = owner
 			owner = {
-				is_same_value = from.owner
+				is_same_empire = from.owner
 			}
 		}
 	}
@@ -278,7 +274,7 @@ can_destroy_planet_with_ACOT_PLANET_KILLER_NANOBOTS = {
 		custom_tooltip = {
 			fail_text = primitives_not_in_borders
 			exists = space_owner
-			space_owner = { is_same_value = from.owner }
+			is_owned_by = from.owner
 		}
 	}
 	custom_tooltip = {
@@ -364,7 +360,7 @@ can_destroy_planet_with_ACOT_SE_PLANET_KILLER_CRACKER = {
 					NOT = { exists = space_owner }
 					AND = {
 						exists = space_owner
-						space_owner = { is_same_value = from.owner }
+						is_owned_by = from.owner
 					}
 				}
 				OR = {
@@ -384,8 +380,7 @@ can_destroy_planet_with_ACOT_SE_PLANET_KILLER_CRACKER = {
 					is_planet_class = pc_savannah
 					is_planet_class = pc_gaia	
 					is_planet_class = pc_nuked
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat
+					is_artificial = yes
 				}
 			}
 		}
@@ -445,10 +440,7 @@ can_destroy_planet_with_ACOT_SE_PLANET_KILLER_NEUTRON = {
 					is_country_type = primitive
 				}
 				from.owner = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
+					is_xenophobe = yes
 				}
 			}
 			AND = { # at war with primitive space owner
@@ -503,7 +495,7 @@ can_destroy_planet_with_ACOT_SE_PLANET_KILLER_GODRAY = {
 			}
 			AND = {
 				exists = owner
-				owner = { is_same_value = from.owner }
+				is_owned_by = from.owner
 			}
 		}
 	}
@@ -519,14 +511,14 @@ can_destroy_planet_with_ACOT_SE_PLANET_KILLER_GODRAY = {
 			}
 			exists = owner
 			owner = {
-				is_same_value = from.owner
+				is_same_empire = from.owner
 			}
 		}
 		custom_tooltip = {
 			text = not_owned_test_fire
 			exists = owner
 			owner = {
-				is_same_value = from.owner
+				is_same_empire = from.owner
 			}
 		}
 	}
@@ -565,7 +557,7 @@ can_destroy_planet_with_ACOT_SE_PLANET_KILLER_NANOBOTS = {
 		custom_tooltip = {
 			fail_text = primitives_not_in_borders
 			exists = space_owner
-			space_owner = { is_same_value = from.owner }
+			is_owned_by = from.owner
 		}
 	}
 	custom_tooltip = {
@@ -650,7 +642,7 @@ can_destroy_planet_with_ACOT_HE_PLANET_KILLER_CRACKER = {
 					NOT = { exists = space_owner }
 					AND = {
 						exists = space_owner
-						space_owner = { is_same_value = from.owner }
+						is_owned_by = from.owner
 					}
 				}
 				OR = {
@@ -670,8 +662,7 @@ can_destroy_planet_with_ACOT_HE_PLANET_KILLER_CRACKER = {
 					is_planet_class = pc_savannah
 					is_planet_class = pc_gaia	
 					is_planet_class = pc_nuked
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat
+					is_artificial = yes
 				}
 			}
 		}
@@ -731,10 +722,7 @@ can_destroy_planet_with_ACOT_HE_PLANET_KILLER_NEUTRON = {
 					is_country_type = primitive
 				}
 				from.owner = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
+					is_xenophobe = yes
 				}
 			}
 			AND = { # at war with primitive space owner
@@ -789,7 +777,7 @@ can_destroy_planet_with_ACOT_HE_PLANET_KILLER_GODRAY = {
 			}
 			AND = {
 				exists = owner
-				owner = { is_same_value = from.owner }
+				is_owned_by = from.owner
 			}
 		}
 	}
@@ -805,14 +793,14 @@ can_destroy_planet_with_ACOT_HE_PLANET_KILLER_GODRAY = {
 			}
 			exists = owner
 			owner = {
-				is_same_value = from.owner
+				is_same_empire = from.owner
 			}
 		}
 		custom_tooltip = {
 			text = not_owned_test_fire
 			exists = owner
 			owner = {
-				is_same_value = from.owner
+				is_same_empire = from.owner
 			}
 		}
 	}
@@ -851,7 +839,7 @@ can_destroy_planet_with_ACOT_HE_PLANET_KILLER_NANOBOTS = {
 		custom_tooltip = {
 			fail_text = primitives_not_in_borders
 			exists = space_owner
-			space_owner = { is_same_value = from.owner }
+			is_owned_by = from.owner
 		}
 	}
 	custom_tooltip = {
@@ -931,7 +919,7 @@ can_destroy_planet_with_ACOT_EMISSARY_BEAM = {
 					NOT = { exists = space_owner }
 					AND = {
 						exists = space_owner
-						space_owner = { is_same_value = from.owner }
+						is_owned_by = from.owner
 					}
 				}
 				is_a_habitable_planet_megastructure = yes

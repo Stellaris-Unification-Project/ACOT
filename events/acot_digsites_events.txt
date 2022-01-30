@@ -24,7 +24,7 @@ planet_event = {
 		has_planet_flag = can_have_precursor_event
 		exists = owner
 		owner = {
-			is_same_value = root.owner
+			is_same_empire = root.owner
 			is_ai = no
 		}
 	}

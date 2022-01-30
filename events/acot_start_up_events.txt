@@ -1147,11 +1147,7 @@ country_event = {
 								any_system_planet = {
 									is_a_habitable_planet_megastructure = yes
 								}
-								NOT = {
-									owner = {
-										is_same_value = capital_star
-									}
-								}
+								NOT = { is_owned_by = capital_star }
 							}
 							create_starbase = {
 								size = "starbase_starport"
@@ -1882,11 +1878,7 @@ country_event = {
 							limit = {
 								any_system_planet = {
 									is_a_habitable_planet_megastructure = yes
-									NOT = {
-										owner = {
-											is_same_value = capital_star
-										}
-									}
+									NOT = { is_owned_by = capital_star }
 								}
 							}
 							create_starbase = {

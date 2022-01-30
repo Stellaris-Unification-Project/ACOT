@@ -828,10 +828,9 @@ tech_stellarite_reactor = {
 	
 
 	potential = {
-		NOT = { has_global_flag = acot_shipcom_forbidden }
 		NOR = {
-			is_country_type = fallen_empire
-			is_country_type = awakened_fallen_empire
+			has_global_flag = acot_shipcom_forbidden
+			is_fallen_empire = yes
 		}
 		has_country_flag = stellarite_tech_enable
 	}

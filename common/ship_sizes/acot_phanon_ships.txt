@@ -50,7 +50,7 @@ acot_star_bender = {
 	}
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 11
+	icon = ship_size_transport
 
 	combat_disengage_chance = 1.5
 
@@ -82,7 +82,7 @@ acot_starfighter_hero = {
 	}
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 11
+	icon = ship_size_transport
 
 	combat_disengage_chance = 1.5
 
@@ -116,7 +116,7 @@ acot_star_fighters = {
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 1
+	icon = ship_size_military_1
 	
 	resources = {
 		category = starbase_stations
@@ -170,7 +170,7 @@ acot_star_destroyer = {
 	}
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 2
+	icon = ship_size_military_1
 	
 	resources = {
 		category = starbase_stations
@@ -222,7 +222,7 @@ acot_star_devastator = {
 	}
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 3
+	icon = ship_size_military_2
 	
 	resources = {
 		category = starbase_stations
@@ -272,7 +272,7 @@ acot_star_decimator = {
 	}
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 4
+	icon = ship_size_military_4
 	prerequisites = { tech_phanon_titan }
 	
 	resources = {
@@ -333,7 +333,7 @@ acot_star_dominator = {
 	}
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 4
+	icon = ship_size_military_4
 	prerequisites = { tech_phanon_titan }
 	
 	resources = {
@@ -395,7 +395,7 @@ acot_megadreadnought = {
 	} 
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 5
+	icon = ship_size_military_8
 	prerequisites = { tech_phanon_mothership }
 	
 	resources = {
@@ -470,7 +470,7 @@ acot_star_annihilator = {
 	}
 	num_target_locators = 0
 	is_space_station = no
-	icon_frame = 5
+	icon = ship_size_military_8
 	prerequisites = { tech_phanon_mothership }
 	
 	resources = {

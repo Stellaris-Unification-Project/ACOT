@@ -1785,8 +1785,10 @@ tech_darkmatter_reactor_booster_pe = {
 	
 	potential = {
 		has_technology = tech_dark_matter_power_core_pe
-		NOT = { has_global_flag = acot_aux_forbidden }
-		NOT = { has_global_flag = acot_phanon_forbidden }
+		NOR = {
+			has_global_flag = acot_aux_forbidden
+			has_global_flag = acot_phanon_forbidden
+		}
 	}
 
 	weight_modifier = {
@@ -1831,8 +1833,10 @@ tech_darkmatter_hyper_jump_drive_pe = {
 
 	potential = {
 		has_technology = tech_dark_matter_power_core_pe
-		NOT = { has_global_flag = acot_phanon_forbidden }
-		NOT = { has_global_flag = acot_aux_forbidden }
+		NOR = {
+			has_global_flag = acot_phanon_forbidden
+			has_global_flag = acot_aux_forbidden
+		}
 	}
 	
 	weight_modifier = {
@@ -1885,8 +1889,10 @@ tech_darkmatter_aura_energy_drainer_pe = {
 
 	potential = {
 		has_technology = tech_dark_matter_power_core_pe
-		NOT = { has_global_flag = acot_phanon_forbidden }
-		NOT = { has_global_flag = acot_aux_forbidden }
+		NOR = {
+			has_global_flag = acot_phanon_forbidden
+			has_global_flag = acot_aux_forbidden
+		}
 	}
 	
 	prereqfor_desc = {
@@ -1939,8 +1945,10 @@ tech_computer_phi = {
 
 	potential = {
 		has_technology = tech_dark_matter_power_core_pe
-		NOT = { has_global_flag = acot_phanon_forbidden }
-		NOT = { has_global_flag = acot_shipcom_forbidden }
+		NOR = {
+			has_global_flag = acot_phanon_forbidden
+			has_global_flag = acot_shipcom_forbidden
+		}
 	}
 	
 	
@@ -1996,8 +2004,10 @@ tech_pmc_decimator_beam = {
 
 	potential = {
 		has_technology = tech_dark_matter_power_core_pe
-		NOT = { has_global_flag = acot_phanon_forbidden }
-		NOT = { has_global_flag = acot_weapons_forbidden }
+		NOR = {
+			has_global_flag = acot_phanon_forbidden
+			has_global_flag = acot_weapons_forbidden
+		}
 	}
 
 	prerequisites = {  }
@@ -2018,8 +2028,10 @@ tech_pmc_yamato_cannon = {
 
 	potential = {
 		has_technology = tech_dark_matter_power_core_pe
-		NOT = { has_global_flag = acot_phanon_forbidden }
-		NOT = { has_global_flag = acot_weapons_forbidden }
+		NOR = {
+			has_global_flag = acot_phanon_forbidden
+			has_global_flag = acot_weapons_forbidden
+		}
 	}
 
 	prerequisites = {  }
@@ -2070,8 +2082,10 @@ tech_phanon_army = {
 
 	potential = {
 		has_technology = tech_dark_matter_power_core_pe
-		NOT = { has_global_flag = acot_phanon_forbidden }
-		NOT = { has_global_flag = acot_army_forbidden }
+		NOR = {
+			has_global_flag = acot_phanon_forbidden
+			has_global_flag = acot_army_forbidden
+		}
 	}
 
 	prerequisites = {  }
@@ -2092,8 +2106,10 @@ tech_phanon_attack_dog = {
 
 	potential = {
 		has_technology = tech_dark_matter_power_core_pe
-		NOT = { has_global_flag = acot_phanon_forbidden }
-		NOT = { has_global_flag = acot_army_forbidden }
+		NOR = {
+			has_global_flag = acot_phanon_forbidden
+			has_global_flag = acot_army_forbidden
+		}
 	}
 
 	prerequisites = {  }
@@ -2114,8 +2130,10 @@ tech_phanon_operative = {
 
 	potential = {
 		has_technology = tech_dark_matter_power_core_pe
-		NOT = { has_global_flag = acot_phanon_forbidden }
-		NOT = { has_global_flag = acot_army_forbidden }
+		NOR = {
+			has_global_flag = acot_phanon_forbidden
+			has_global_flag = acot_army_forbidden
+		}
 	}
 
 	prerequisites = {  }

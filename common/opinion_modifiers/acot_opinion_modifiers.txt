@@ -8,8 +8,7 @@ triggered_opinion_tech_youhavedankmatter = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				is_country_type = ascended_empire
 				is_country_type = lost_empire
 			}

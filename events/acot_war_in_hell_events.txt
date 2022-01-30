@@ -273,8 +273,7 @@ country_event = {
 			limit = {
 				OR = {
 					is_country_type = default
-					is_country_type = fallen_empire
-                    is_country_type = awakened_fallen_empire
+                    is_fallen_empire = yes
                     is_country_type = ascended_empire
                     is_country_type = lost_empire
                     is_country_type = eternal_empire
@@ -484,8 +483,7 @@ country_event = {
 			limit = {
 				OR = {
 					is_country_type = default
-					is_country_type = fallen_empire
-                    is_country_type = awakened_fallen_empire
+                    is_fallen_empire = yes
                     is_country_type = ascended_empire
                     is_country_type = lost_empire
                     is_country_type = eternal_empire
@@ -1368,7 +1366,7 @@ country_event = {
             unity = 1000000
             influence = 1000
         }
-        every_country = {
+        every_playable_country = {
             limit = {
                 is_country_type = default
                 NOR = {
@@ -1540,10 +1538,7 @@ country_event = {
             if = {
                 limit = {
                     habitable_planet = yes
-                    NOR = {
-                        is_planet_class = pc_ringworld_habitable
-                        is_planet_class = pc_habitat          
-                    }
+                    is_artificial = no
                  }
                  change_pc = pc_molten               
             }
@@ -1578,10 +1573,7 @@ country_event = {
             if = {
                 limit = {
                     habitable_planet = yes
-                    NOR = {
-                        is_planet_class = pc_ringworld_habitable
-                        is_planet_class = pc_habitat          
-                    }
+                    is_artificial = no
                  }
                  change_pc = pc_molten               
             }

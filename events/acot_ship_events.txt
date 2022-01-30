@@ -629,7 +629,7 @@ fleet_event = {
 		FROM = {
 			exists = owner
 			owner = {
-				is_same_value = root.owner
+				is_same_empire = root.owner
 			}
 		}
 	}

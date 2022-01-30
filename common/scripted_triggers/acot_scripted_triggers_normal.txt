@@ -71,8 +71,7 @@ is_hero_tech = {
 habitable_structure = {
 	OR = {
 		### PLEBIAN
-		is_planet_class = pc_ringworld_habitable
-		is_planet_class = pc_habitat
+		is_artificial = yes
 		### ACOT
 		is_planet_class = pc_dark_fractured
 		is_planet_class = pc_dark_fractured_ae
